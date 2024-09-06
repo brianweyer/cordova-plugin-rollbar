@@ -44,7 +44,14 @@
         </config-file>
 
         <!-- Rollbar Lib -->
-        <framework src="Rollbar" type="podspec" spec="~> 1.0.0-alpha11" />
+        <podspec>
+            <config>
+                <source url="https://cdn.cocoapods.org/"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Rollbar" spec="~> 1.0.0-alpha11" />
+            </pods>
+        </podspec>
     </platform>
 
     <!-- android -->
